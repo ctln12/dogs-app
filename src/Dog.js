@@ -19,7 +19,7 @@ class Dog extends Component {
               <p>{dog.age} years old</p>
             </div>
             <div className="Dog-facts">
-              {dog.facts.map(fact => <p>{fact}</p>)}
+              {dog.facts.map((fact, idx) => <p key={idx}>{fact}</p>)}
             </div>
             <button className="Dog-button" onClick={history.goBack}>Go Back</button>
           </div>

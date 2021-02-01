@@ -8,9 +8,23 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.Dogs-dog {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .Dogs-dog img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.Dogs-dog a {
+  color: black;
+  text-transform: uppercase;
 }
