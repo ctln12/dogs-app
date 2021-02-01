@@ -1,0 +1,16 @@
+.Dogs {
+  margin: 30px auto;
+  width: 45%;
+}
+
+.Dogs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Dogs-dog img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}

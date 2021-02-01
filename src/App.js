@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
+import Dogs from './Dogs';
 
 class App extends Component {
   static defaultProps = {
@@ -37,9 +39,10 @@ class App extends Component {
     ]
   }
   render() {
+    const {dogs} = this.props;
     return (
       <div className="App">
-        <h1>Choose a Dog!</h1>
+        <Route path="/dogs" render={() => <Dogs dogs={dogs} />} />
       </div>
     );
   }
