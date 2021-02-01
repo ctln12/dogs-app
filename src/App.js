@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Dogs from './Dogs';
+import Dog from './Dog';
 
 class App extends Component {
   static defaultProps = {
@@ -42,7 +43,10 @@ class App extends Component {
     const {dogs} = this.props;
     return (
       <div className="App">
-        <Route path="/dogs" render={() => <Dogs dogs={dogs} />} />
+        <Switch>
+          <Route exact path="/dogs" render={() => <Dogs dogs={dogs} />} />
+          <Route exact path="/dogs/:name" render={(reactProps) => <Dog {...reactProps} dogs={dogs} />} />
+        </Switch>
       </div>
     );
   }
