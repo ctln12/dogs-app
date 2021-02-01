@@ -2,6 +2,9 @@
   margin: 30px auto;
   width: 45%;
 }
+.Dogs h1 {
+  margin-bottom: 2rem;
+}
 
 .Dogs-list {
   display: grid;
