@@ -7,7 +7,7 @@ class Dog extends Component {
     return dog;
   }
   render() {
-    const {match} = this.props;
+    const {match, history} = this.props;
     const dog = this.findDog(match.params.name);
     return (
       <div className="Dog">
@@ -21,7 +21,7 @@ class Dog extends Component {
             <div className="Dog-facts">
               {dog.facts.map(fact => <p>{fact}</p>)}
             </div>
-            <button className="Dog-button">Go Back</button>
+            <button className="Dog-button" onClick={history.goBack}>Go Back</button>
           </div>
         </div>
       </div>
