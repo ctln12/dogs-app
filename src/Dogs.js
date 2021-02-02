@@ -7,11 +7,11 @@ class Dogs extends Component {
     const {dogs} = this.props;
     return (
       <div className="Dogs">
-        <h1>Choose a Dog!</h1>
+        <h1 className="display-1 text-center">Choose a Dog!</h1>
         <div className="Dogs-list">
           {dogs.map(dog => (
             <div className="Dogs-dog" key={dog.name}>
-              <img src="https://images.unsplash.com/photo-1566756578171-cbf0bcadd71b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt={dog.name} />
+              <img src={dog.src} alt={dog.name} />
               <Link to={`/dogs/${dog.name}`}>
                 <p>{dog.name}</p>
               </Link>

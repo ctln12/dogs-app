@@ -12,7 +12,7 @@ class Dog extends Component {
     return (
       <div className="Dog">
         <div className="Dog-card">
-          <img src="https://images.unsplash.com/photo-1566756578171-cbf0bcadd71b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt={dog.name} />
+          <img src={dog.src} alt={dog.name} />
           <div className="Dog-card-body">
             <div className="Dog-details">
               <h1>{dog.name}</h1>
