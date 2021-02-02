@@ -4,9 +4,4 @@
 .Dog-card img {
   height: 350px;
   object-fit: cover;
-  filter: none;
-  transition: 0.4s filter ease;
-}
-.Dog-card:hover img {
-  filter: grayscale();
 }

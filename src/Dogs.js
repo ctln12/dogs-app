@@ -13,7 +13,7 @@ class Dogs extends Component {
             {dogs.map(dog => (
               <div className="Dogs-dog col-md-6 col-lg-4" key={dog.name}>
                 <img src={dog.src} alt={dog.name} />
-                <h3>
+                <h3 className="mt-2">
                   <Link className="underline" to={`/dogs/${dog.name}`}>
                     {dog.name}
                   </Link>
