@@ -9,7 +9,7 @@ class Dogs extends Component {
       <div className="Dogs">
         <h1 className="display-2 text-center">Choose a Dog!</h1>
         <div className="Dogs-list">
-          <div className="container">
+          <div className="container text-center">
             <div className="row">
               {dogs.map(dog => (
                 <div className="Dogs-dog col-md-6 col-lg-4" key={dog.name}>
