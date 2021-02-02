@@ -43,7 +43,6 @@ class App extends Component {
       }
     ]
   }
-  // (reactProps) =>
   render() {
     const {dogs} = this.props;
     const findDog = (props) => {

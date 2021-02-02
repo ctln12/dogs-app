@@ -1,4 +1,4 @@
-.Dog {
+/* .Dog {
   margin: 40px auto;
   width: 30%;
 }
@@ -6,15 +6,15 @@
 .Dog-card {
   border-radius: 3px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+} */
 .Dog-card img {
-  width: 100%;
-  height: 300px;
+  /* width: 100%; */
+  height: 350px;
   object-fit: cover;
-  border-radius: 3px 3px 0 0;
+  /* border-radius: 3px 3px 0 0; */
 }
 
-.Dog-card-body {
+/* .Dog-card-body {
   text-align: left;
 }
 
@@ -41,4 +41,4 @@
   border: 1px solid black;
   background-color: black;
   color: white;
-}
+} */
