@@ -17,7 +17,7 @@ Make the website responsive (if you have time) using Bootstrap to add a responsi
 
 The app displays an interface that looks like this:
 
-![dogs](./src/dogs_app.png)
+![dogs app image](./src/dogs_app.png)
 
 ### Technologies
 
@@ -37,7 +37,7 @@ The app displays an interface that looks like this:
 
 ### Poject status
 
-The project is ongoing.
+The project is done.
 
 ### Credits & Sources
 
