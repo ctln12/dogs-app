@@ -43,14 +43,22 @@ class App extends Component {
       }
     ]
   }
+  // (reactProps) =>
   render() {
     const {dogs} = this.props;
+    const findDog = (props) => {
+      let name = props.match.params.name;
+      let currentDog = this.props.dogs.find(
+        dog => dog.name.toLowerCase() === name.toLowerCase()
+      );
+      return <Dog {...props} dog={currentDog} />;
+    }
     return (
       <div className="App">
         <Navbar dogs={dogs} />
         <Switch>
           <Route exact path="/dogs" render={() => <Dogs dogs={dogs} />} />
-          <Route exact path="/dogs/:name" render={(reactProps) => <Dog {...reactProps} dogs={dogs} />} />
+          <Route exact path="/dogs/:name" render={findDog} />
         </Switch>
       </div>
     );
